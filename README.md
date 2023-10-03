@@ -1,7 +1,7 @@
 ## <div align="center"><u>Paynetics Task Documentation</u></div>
 
 ### Requirements:
-- [PHP >= 8.2](https://www.php.net/downloads.php)
+- [PHP >= 8.1](https://www.php.net/downloads.php)
 - [Composer](https://getcomposer.org/download/)
 - Database Server (MySQL, PostgresSQL, SQLite)
 - [Laragon](https://laragon.org/download/index.html) (optional)
