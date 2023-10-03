@@ -1,0 +1,28 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Task>
+ */
+class TaskFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        $statuses = ['new', 'pending', 'failed', 'done'];
+
+        return [
+            'title' => fake()->title,
+            'description' => fake()->paragraph,
+            'status' => $statuses[array_rand($statuses)],
+            'duration' => fake()->numberBetween(10, 7 * 24 * 60),
+        ];
+    }
+}
