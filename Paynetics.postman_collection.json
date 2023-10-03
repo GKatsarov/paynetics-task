@@ -1,311 +1,311 @@
 {
-	"info": {
-		"_postman_id": "7e4c1095-0f7d-426f-9ea9-40dec47932ca",
-		"name": "Paynetics",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29139176"
-	},
-	"item": [
-		{
-			"name": "Projects",
-			"item": [
-				{
-					"name": "Single Project",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{HOST}}/api/projects/1",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"projects",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create Project",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "Test Project",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "Test Description",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "new",
-									"type": "text"
-								},
-								{
-									"key": "client_id",
-									"value": "1",
-									"type": "text"
-								},
-								{
-									"key": "company_id",
-									"value": "1",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						},
-						"url": {
-							"raw": "{{HOST}}/api/projects",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"projects"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Project",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "title",
-									"value": "Updated Title",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "Updated Description",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "new",
-									"type": "text"
-								},
-								{
-									"key": "client_id",
-									"value": "2",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "{{HOST}}/api/projects/1",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"projects",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{HOST}}/api/projects/10",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"projects",
-								"10"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Tasks",
-			"item": [
-				{
-					"name": "Single Task",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{HOST}}/api/tasks/1",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"tasks",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create Task",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "title",
-									"value": "Test Task",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "Test Description",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "new",
-									"type": "text"
-								},
-								{
-									"key": "project_id",
-									"value": "1",
-									"type": "text"
-								},
-								{
-									"key": "duration",
-									"value": "30",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "{{HOST}}/api/tasks",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"tasks"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Task",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": [
-								{
-									"key": "title",
-									"value": "Updated Title",
-									"type": "text"
-								},
-								{
-									"key": "description",
-									"value": "Updated Description",
-									"type": "text"
-								},
-								{
-									"key": "status",
-									"value": "new",
-									"type": "text"
-								},
-								{
-									"key": "project_id",
-									"value": "1",
-									"type": "text"
-								}
-							]
-						},
-						"url": {
-							"raw": "{{HOST}}/api/tasks/1",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"tasks",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "New Task",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{HOST}}/api/tasks/50",
-							"host": [
-								"{{HOST}}"
-							],
-							"path": [
-								"api",
-								"tasks",
-								"50"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		}
-	]
+    "info": {
+        "_postman_id": "7e4c1095-0f7d-426f-9ea9-40dec47932ca",
+        "name": "Paynetics",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "29139176"
+    },
+    "item": [
+        {
+            "name": "Projects",
+            "item": [
+                {
+                    "name": "Single Project",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{HOST}}/api/projects/1",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "projects",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Project",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "Test Project",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Test Description",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "new",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "client_id",
+                                    "value": "1",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "company_id",
+                                    "value": "1",
+                                    "type": "text",
+                                    "disabled": true
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{HOST}}/api/projects",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "projects"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update Project",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "title",
+                                    "value": "Updated Title",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Updated Description",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "new",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "client_id",
+                                    "value": "2",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{HOST}}/api/projects/1",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "projects",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Project",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "url": {
+                            "raw": "{{HOST}}/api/projects/10",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "projects",
+                                "10"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Tasks",
+            "item": [
+                {
+                    "name": "Single Task",
+                    "request": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{HOST}}/api/tasks/1",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "tasks",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create Task",
+                    "request": {
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "title",
+                                    "value": "Test Task",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Test Description",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "new",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "project_id",
+                                    "value": "1",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "duration",
+                                    "value": "30",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{HOST}}/api/tasks",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "tasks"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Update Task",
+                    "request": {
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json",
+                                "type": "text"
+                            }
+                        ],
+                        "body": {
+                            "mode": "urlencoded",
+                            "urlencoded": [
+                                {
+                                    "key": "title",
+                                    "value": "Updated Title",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Updated Description",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "status",
+                                    "value": "new",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "project_id",
+                                    "value": "1",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "raw": "{{HOST}}/api/tasks/1",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "tasks",
+                                "1"
+                            ]
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Delete Task",
+                    "request": {
+                        "method": "DELETE",
+                        "header": [],
+                        "url": {
+                            "raw": "{{HOST}}/api/tasks/50",
+                            "host": [
+                                "{{HOST}}"
+                            ],
+                            "path": [
+                                "api",
+                                "tasks",
+                                "50"
+                            ]
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ]
 }
